@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ### API Configuration
 Set up your API keys for required services:
-first Preferable method, deploy to streamlit to use from any remote device and provide your keys in this format:
+first Preferable method, deploy to streamlit to use from any remote device and provide your keys in this format IN THE SECRETS SECTION OF YOUR APP SETTINGS or in your.streamlit.secrets.toml file:
 ```bash
 AZURE_OPENAI_API_KEY="<API-KEY>"
 SERPAPI_API_KEY="<API-KEY>"
