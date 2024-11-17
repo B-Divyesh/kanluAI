@@ -6,7 +6,7 @@ import streamlit as st
 from config.config import AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_API_KEY, AZURE_OPENAI_DEPLOYMENT_NAME, DEFAULT_MODEL, MAX_TOKENS, TEMPERATURE
 
 st.write("AZURE_OPENAI_API_KEY", st.secrets["AZURE_OPENAI_API_KEY"])
-st.write("AZURE_OPENAI_ENDPOINT", st.secrets["AZURE_OPEN_ENDPOINT"])
+st.write("AZURE_OPENAI_ENDPOINT", st.secrets["AZURE_OPENAI_ENDPOINT"])
 
 class LLMProcessor:
     def __init__(self):
