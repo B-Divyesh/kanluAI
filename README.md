@@ -104,3 +104,4 @@ We welcome contributions! Please feel free to submit pull requests for:
 
 ## License
 KanluAI is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
+## Checkout the loom video here https://youtu.be/cQqz8oU5iQQ
