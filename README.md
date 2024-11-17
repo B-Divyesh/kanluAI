@@ -29,8 +29,28 @@ pip install -r requirements.txt
 
 ### API Configuration
 Set up your API keys for required services:
+first Preferable method, deploy to streamlit to use from any remote device and provide your keys in this format:
 ```bash
-export AZURE_OPENAI_API_KEY="your-openai-api-key" 
+AZURE_OPENAI_API_KEY="<API-KEY>"
+SERPAPI_API_KEY="<API-KEY>"
+GOOGLE_CREDENTIALS="<API-KEY>"
+AZURE_OPENAI_ENDPOINT="<API-ENDPOINT>"
+```
+second Preferable method make an .env file in the root directory with the following format:
+```bash
+AZURE_OPENAI_API_KEY="<API-KEY>"
+SERPAPI_API_KEY=<API-KEY>
+GOOGLE_CREDENTIALS=<API-KEY>
+AZURE_OPENAI_ENDPOINT="<API-ENDPOINT>"
+AZURE_OPENAI_DEPLOYMENT_NAME=<MODEL-NAME> #optional
+```
+third preferance, hard code your api keys if you are not going to deploy into public domains:
+```bash
+self.client = AzureOpenAI(
+            api_key=<AZURE_OPENAI_API_KEY>,
+            api_version='2024-08-01-preview',
+            azure_endpoint=<AZURE_OPENAI_ENDPOINT>
+        )
 ```
 
 For Google Sheets integration, follow the [Google Sheets API setup guide](https://developers.google.com/sheets/api/quickstart/python) to obtain your credentials.json.
