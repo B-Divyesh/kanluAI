@@ -1,6 +1,6 @@
 # KanluAI
 
-**KanluAI** is an AI-powered information retrieval tool that enables automated web searching and data extraction for your datasets. Upload CSV files or connect to Google Sheets to process multiple entities efficiently using large language models.
+**KanluAI** is an AI-powered information retrieval tool that enables automated web searching and data extraction for your datasets. Upload CSV files or connect to Google Sheets to process multiple entities efficiently using large language models. Try it out at 
 
 <div align="center">
 
@@ -22,21 +22,23 @@
 
 ### Prerequisites
 ```bash
-pip install streamlit pandas openai google-auth google-auth-oauthlib google-auth-httplib2
+#makes sure you setup a virtual enviroment before starting
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ### API Configuration
 Set up your API keys for required services:
 ```bash
-export OPENAI_API_KEY="your-openai-api-key"
+export AZURE_OPENAI_API_KEY="your-openai-api-key" 
 ```
 
 For Google Sheets integration, follow the [Google Sheets API setup guide](https://developers.google.com/sheets/api/quickstart/python) to obtain your credentials.json.
 
 ### Installation
 ```bash
-git clone https://github.com/your-username/kanluai.git
-cd kanluai
+git clone https://github.com/your-username/kanluAI.git
+cd kanluAI
 streamlit run main.py
 ```
 
